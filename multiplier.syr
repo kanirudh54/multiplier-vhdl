@@ -1,0 +1,191 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: multiplier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplier.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplier"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-fgg484
+
+---- Source Options
+Top Module Name                    : multiplier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" into library work
+Parsing entity <adder>.
+Parsing architecture <func1> of entity <adder>.
+Parsing entity <clock>.
+Parsing architecture <func2> of entity <clock>.
+Parsing entity <hiloregister>.
+Parsing architecture <func3> of entity <hiloregister>.
+Parsing entity <control>.
+Parsing architecture <func4> of entity <control>.
+Parsing entity <multiplier>.
+Parsing architecture <Behavioral> of entity <multiplier>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <multiplier> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <clock> (architecture <func2>) from library <work>.
+
+Elaborating entity <adder> (architecture <func1>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 31. Case statement is complete. others clause is never selected
+
+Elaborating entity <control> (architecture <func4>) from library <work>.
+
+Elaborating entity <hiloregister> (architecture <func3>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 94: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 97: load should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 98: hi should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 99: lo should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 101: add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 102: addedhi should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 104: shiftright should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 105: hilo should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 110: hilo should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 111: hilo should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 112: hilo should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 243: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 244: productval should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 246: input should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 248: input should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 249: mcand should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 252: productval should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 254: productval should be on the sensitivity list of the process
+ERROR:HDLCompiler:1401 - "C:\Users\Work\Desktop\4thsem\cs223-HARD-LAB\lab2\part2\multiplier\multiplier.vhd" Line 237: Signal mcand[7] in unit multiplier is connected to following multiple drivers:
+Driver 0: output signal mcand[7] of instance Latch (mcand[7]).
+Driver 1: ADD1/adder_result[7] driven by output signal alu_process.res[7] of instance Adder (ADD1).
+Driver 0: output signal mcand[6] of instance Latch (mcand[6]).
+Driver 1: ADD1/adder_result[6] driven by output signal alu_process.res[6] of instance Adder (ADD1).
+Driver 0: output signal mcand[5] of instance Latch (mcand[5]).
+Driver 1: ADD1/adder_result[5] driven by output signal alu_process.res[5] of instance Adder (ADD1).
+Driver 0: output signal mcand[4] of instance Latch (mcand[4]).
+Driver 1: ADD1/adder_result[4] driven by output signal alu_process.res[4] of instance Adder (ADD1).
+Driver 0: output signal mcand[3] of instance Latch (mcand[3]).
+Driver 1: ADD1/adder_result[3] driven by output signal alu_process.res[3] of instance Adder (ADD1).
+Driver 0: output signal mcand[2] of instance Latch (mcand[2]).
+Driver 1: ADD1/adder_result[2] driven by output signal alu_process.res[2] of instance Adder (ADD1).
+Driver 0: output signal mcand[1] of instance Latch (mcand[1]).
+Driver 1: ADD1/adder_result[1] driven by output signal alu_process.res[1] of instance Adder (ADD1).
+Driver 0: output signal mcand[0] of instance Latch (mcand[0]).
+Driver 1: ADD1/adder_result[0] driven by output signal alu_process.res[0] of instance Adder (ADD1).
+--> 
+
+Total memory usage is 202380 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
